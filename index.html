@@ -6,8 +6,14 @@
     <title>TechWave</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-slate-950 text-white font-sans">
+  <body class="bg-slate-950 text-white font-inter font-sans-serif">
     <header class="relative z-50">
       <div class="flex items-center justify-between px-4 py-4 lg:px-12">
         <div class="text-4xl font-bold">
@@ -50,5 +56,52 @@
         </button>
       </div>
     </header>
+
+    <section
+      class="relative min-h-screen grid place-items-center px-4 bg-cover bg-center"
+      style="background-image: url('assets/hero-bg.png')"
+    >
+      <img
+        src="assets/hero-circle.png"
+        alt="Circle"
+        class="absolute w-72 md:w-96 -translate-y-24"
+      />
+
+      <div class="relative max-w-md grid gap-6 text-center">
+        <span
+          class="justify-self-center text-white inline-block px-4 py-1 text-xs rounded-full bg-green-500 text-black font-semibold -translate-y-16 translate-x-32"
+          >NEW</span
+        >
+
+        <img
+          src="assets/microphone.png"
+          alt="Microphone"
+          class="mx-auto w-20 -translate-y-8 transition-transform duration-300 hover:scale-110 hover:rotate-6"
+        />
+        <div class="relative translate-y-32">
+          <h1 class="text-5xl font-bold">TechWave</h1>
+          <p class="block text-gray-200">
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
+        </div>
+
+        <div class="flex justify-center gap-4 translate-y-32">
+          <button
+            class="flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600 shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 transition-shadow duration-300"
+          >
+            <img src="assets/spotify.png" class="w-5" />
+            Listen on Spotify
+          </button>
+
+          <button
+            class="flex items-center gap-2 px-6 py-3 rounded-full bg-transparent border border-green-500 text-green-400 hover:bg-green-500 hover:text-white hover:shadow-lg hover:shadow-green-500/40 transition-all duration-300"
+          >
+            <img src="assets/message.png" class="w-5" />
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
