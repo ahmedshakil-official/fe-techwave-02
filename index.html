@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TechWave Podcast</title>
-<script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="">
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechWave</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950 text-white font-sans">
+    <header class="relative z-50">
+      <div class="flex items-center justify-between px-4 py-4 lg:px-12">
+        <div class="text-4xl font-bold">
+          Tech<span
+            class="bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600 bg-clip-text text-transparent"
+            >Wave</span
+          >
+        </div>
+
+        <label for="menu-toggle" class="cursor-pointer lg:hidden">
+          <img src="assets/hamburger-menu.png" alt="Menu" class="w-6 h-6" />
+        </label>
+
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="#" class="hover:text-cyan-400">Home</a>
+          <a href="#" class="hover:text-cyan-400">About</a>
+          <a href="#" class="hover:text-cyan-400">Episodes</a>
+          <a href="#" class="hover:text-cyan-400">Host</a>
+        </nav>
+
+        <button
+          class="hidden lg:block px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600 shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 transition-shadow duration-300"
+        >
+          Subscribe
+        </button>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
+      <div
+        class="peer-checked:block hidden lg:hidden bg-slate-900 px-4 pb-4 space-y-3"
+      >
+        <a href="#" class="block">Home</a>
+        <a href="#" class="block">About</a>
+        <a href="#" class="block">Episodes</a>
+        <a href="#" class="block">Host</a>
+        <button
+          class="w-full block px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600 shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 transition-shadow duration-300"
+        >
+          Subscribe
+        </button>
+      </div>
+    </header>
+  </body>
 </html>
